@@ -3,12 +3,15 @@ GET http://localhost:3000/
 ###
 GET http://localhost:3000/brands
 
-###
-POST  http://localhost:3000/brands
+### GET /api/vardai gauti visus vardus
+GET http://localhost:3000/api/vardai
+
+
+### POST /api/vardi
+POST  http://localhost:3000/api/vardai
 Content-Type: application/json
 
-
-  [
-    "Volvo"
-  ]
-
+{
+  "vardas": "Andrius",
+  "pavarde": "Laimonas"
+}
